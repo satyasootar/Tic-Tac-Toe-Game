@@ -7,10 +7,9 @@ body{
     text-align: center;
 }
 .container{
-    height: 70vh;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .game{
     height: 60vmin;
@@ -18,12 +17,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .box{
-    height: 18vmin;
-    width: 18vmin;
+    height: 113.6px;
+    width: 113.6px;
     border-radius: 10px;
     border: none;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
