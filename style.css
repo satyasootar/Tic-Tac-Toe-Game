@@ -25,26 +25,33 @@ nav ul{
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 50px;
 }
 .game{
-    height: 60vmin;
-    width: 60vmin;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    
 }
 .box{
-    height: 113.6px;
-    width: 113.6px;
+    width: 30%;
+    height: 100px;
     border-radius: 10px;
     border: none;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-color: #EAF2D7;
     color: #CB2A5D;
     font-size: 10vmin;
+    margin: 5px;
+}
+.box:hover{
+    background-color: rgb(217, 217, 217);
 }
 .reset{
     height: 40px;
@@ -55,10 +62,11 @@ nav ul{
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-color: #e2f6b5;
     color: #129eab;   
+    transition: all 0.3s;
 }
 
 .reset:hover{
-    background-color:#dded84 ;
+    background-color:#000000 ;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -67,3 +75,34 @@ nav ul{
     font-size: 100px;
     font-weight: 900;
 }
+/* for diffrent screen widths-Responsive */
+@media  screen and  (max-width: 700px) {
+    .game {
+        width: 80%;
+    }
+}
+@media screen and  (max-width: 420px) {
+    .box{
+        width: 25%;
+        height: 50px;
+    }
+    .game {
+        width: 70%;
+    }
+    .container{
+        width: auto;
+    }
+}
+@media screen and  (max-width: 250px) {
+    .box{
+        width: 15%;
+        height: 50px;
+    }
+    .game {
+        width: 70%; 
+    }
+    .container{
+        width: auto;
+    }
+}
+
