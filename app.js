@@ -89,3 +89,26 @@ checkWinner();
 });
 
 resetBtn.addEventListener("click", resetGame);
+
+// for custom cursor 
+
+const cursorPointer = document.querySelector(".cursorPointer");
+const cursorOutline = document.querySelector(".cursorOutline")
+
+window.addEventListener("mousemove" , function(e){
+    const posX = e.clientX;
+    const posY =e.clientY
+    cursorPointer.style.left =`${posX}px`;
+    cursorPointer.style.top =`${posY}px`;
+
+
+    cursorOutline.style.left =`${posX}px`;
+    cursorOutline.style.top =`${posY}px`;
+    cursorOutline.animate({
+        left:`${posX}px`,
+        top:`${posY}px`
+    },{
+        duration:400 , fill:"forwards"
+    })
+
+})
