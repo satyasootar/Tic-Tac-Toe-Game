@@ -182,3 +182,29 @@ footer {
         font-size: 12px;
     }
 }
+
+/* Custom cursor */
+
+.cursorPointer{
+width: 15px;
+height: 15px;
+background-color: rgb(79, 141, 255);
+mix-blend-mode: difference;
+}
+.cursorOutline{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+  
+}
+.cursorPointer , .cursorOutline{
+    position: fixed;
+    border-radius: 50%;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    transform: translate(-50% ,-50%);
+    pointer-events: none;
+   
+}
