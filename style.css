@@ -142,3 +142,31 @@ footer {
 .social-icons a:hover {
     color: #00aaff;
 }
+/* Responsiveness to the footer */
+@media (max-width: 768px) {
+    footer{
+        padding: 150px;
+    }
+    .footer-content p {
+        font-size: 16px;
+    }
+
+    .social-icons li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 150px 0;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 12px;
+    }
+}
