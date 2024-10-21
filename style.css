@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-    background-color:#B3DEE2;
+    background: rgb(97,255,253);
+    background: linear-gradient(90deg, rgba(97,255,253,1) 0%, rgba(255,255,255,1) 100%);
     text-align: center;
 }
 /* navbar */
@@ -53,12 +54,12 @@ nav ul{
     border: none;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-color: #EAF2D7;
-    color: #CB2A5D;
+    color: #040807;
     font-size: 10vmin;
     margin: 5px;
 }
 .box:hover{
-    background-color: rgb(217, 217, 217);
+    background-color: hwb(176 60% 0% / 0.999);
 }
 .reset{
     height: 40px;
